@@ -53,7 +53,7 @@ const chart = (dataSet) => {
     .attr('data-gdp', (i) => i[1])
     .attr('x', (d, i) => {
       return (
-        i * (w / dataSet.length - (padding * 2) / dataSet.length) + padding
+        i * (w / dataSet.length - (padding * 2) / dataSet.length) + padding + 1
       );
     })
     .attr('y', (d, i) => yScale(d[1]))
