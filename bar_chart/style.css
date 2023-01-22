@@ -49,3 +49,7 @@ text,
 #x-axis {
   color: #ece4d4;
 }
+.label {
+  fill: #ece4d4;
+  transform: rotate(90deg);
+}

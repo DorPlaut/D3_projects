@@ -83,13 +83,20 @@ const chart = (dataSet) => {
     tag.style.transform += 'translateX(' + (d.clientX - 100) + 'px)';
   });
 
+  svg
+    .append('text')
+    .text('Gross Domestic Product')
+    .attr('class', 'label')
+    .attr('x', h / 6)
+    .attr('y', -padding - 5)
+    .attr('transform', 'rotate(180deg)');
+
   //  append axis rollers
   svg
     .append('g')
     .attr('transform', 'translate(0,' + (h - padding) + ')')
     .attr('id', 'x-axis')
     .call(axisX);
-
   svg
     .append('g')
     .attr('transform', 'translate(' + padding + ',0 )')
