@@ -4,7 +4,7 @@
 }
 body {
   /* background: #eca869; */
-  background: #2e2e2e;
+  background: #f4ebd3;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -13,35 +13,38 @@ body {
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.chart {
+  scale: 0.9;
+  z-index: 0;
+  background: #8fd1c8;
+  box-shadow: 0rem 0rem 5rem 5rem #8fd1c8;
+  border-radius: 50%;
+}
 #title {
-  color: #ff7b00;
-  text-shadow: 0px 0px 10px black;
+  z-index: 1;
+  color: #2f9087;
 }
 #description {
-  color: #00aeff;
-  text-shadow: 0px 0px 10px black;
+  z-index: 1;
+
+  color: #583305;
   margin-bottom: 1rem;
 }
-.chart {
+/* .chart {
   background: #5a5a5a;
   box-shadow: 0px 0px 20px #000000;
-}
+} */
 
 .tag {
-  background: #2e2e2e;
-  color: #00aeff;
+  background: #f4ebd3;
+  color: #583305;
   position: fixed;
   top: 0;
   left: 0;
   visibility: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  box-shadow: 0px 0px 20px 5px #00aeff;
   padding: 1rem;
-  line-height: 1.5rem;
-  text-align: left;
   pointer-events: none;
+  z-index: 1;
 }
 
 .visible {
@@ -50,10 +53,14 @@ body {
 
 .tick {
   font-size: 0.9rem;
-  color: #ff7b00;
-  text-shadow: 0px 0px 10px #000000;
-  font-weight: bold;
+  color: #5e3023;
+  /* font-weight: bold; */
 }
 #legend text {
-  font-size: 1rem;
+  font-size: 0.8rem;
+}
+
+.states {
+  fill: none;
+  stroke: #8fd1c8;
 }

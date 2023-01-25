@@ -36,6 +36,7 @@ body {
   box-shadow: 4px 4px 0px #eca869;
   padding: 0.5rem;
   text-align: left;
+  pointer-events: none;
 }
 
 .dot {

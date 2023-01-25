@@ -37,6 +37,7 @@ body {
   justify-content: center;
   align-items: center;
   padding: 0.3rem 1rem;
+  pointer-events: none;
 }
 .visible {
   visibility: visible;

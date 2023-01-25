@@ -84,7 +84,7 @@ const chart = (baseTemp, dataSet) => {
       return tempScale(d.variance + 2);
     })
     // handle hover - tag
-    .on('mouseenter', (e, i) => {
+    .on('mouseover', (e, i) => {
       tag.classList.add('visible');
       tag.setAttribute('data-year', i.year);
       tag.innerHTML = ` <h4>${i.year} - ${timeParse(
@@ -102,7 +102,7 @@ const chart = (baseTemp, dataSet) => {
     tag.style.transform += 'translateX(' + (d.clientX - 0) + 'px)';
   });
 
-  //  append axis rollers
+  //  append axis rullers
   svg
     .append('g')
     .attr('transform', 'translate(0,' + (h - paddingLeft + 4) + ')')
