@@ -1,8 +1,8 @@
- #D3 Projects
+ # D3 Projects
 This repository contains projects that utilize the D3.js library to create interactive data visualizations. These projects are part of the [Data Visualization](https://www.freecodecamp.org/learn/data-visualization/) curriculum on FreeCodeCamp.
 
 
-##Projects
+## Projects
 Each project is contained in its own subdirectory within the repository. The projects included in this repository are:
 
 
